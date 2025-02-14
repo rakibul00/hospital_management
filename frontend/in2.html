@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="in2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">MediLab Hospital</h2>
+        <ul>
+            <li><i class="fas fa-home"></i> Dashboard</li>
+            <li><i class="fas fa-user-md"></i> Staff</li>
+            <li><i class="fas fa-vial"></i> Lab</li>
+            <li><i class="fas fa-hospital"></i> Ward</li>
+            <li><i class="fas fa-stethoscope"></i> Treatment</li>
+            <li><i class="fas fa-prescription-bottle"></i> Pharmacy</li>
+            <li><i class="fas fa-user"></i> Patient</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <div class="user-info">
+                <h4>Madhusha</h4>
+                <h4>Prasad</h4>
+            </div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <h5>Total Patients</h5>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h5>Total Doctors</h5>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h5>Total Wards</h5>
+                <p>20</p>
+            </div>
+            <div class="stat-card">
+                <h5>Total Labs</h5>
+                <p>20</p>
+            </div>
+        </section>
+
+        <!-- Line Chart -->
+        <section class="chart-section">
+            <canvas id="patientsChart"></canvas>
+        </section>
+
+        <!-- Tables -->
+        <section class="data-tables">
+            <h3>Recent Doctors</h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Address</th>
+                    <th>Consultancy Charge</th>
+                    <th>Education</th>
+                    <th>DOB</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Sam</td>
+                    <td>0785553321</td>
+                    <td>Kalutara</td>
+                    <td>2500</td>
+                    <td>MBBS</td>
+                    <td>1956-04-13</td>
+                    <td class="online">Online</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John</td>
+                    <td>0724785239</td>
+                    <td>Kandy</td>
+                    <td>2500</td>
+                    <td>PhD</td>
+                    <td>1978-06-13</td>
+                    <td class="offline">Offline</td>
+                </tr>
+            </table>
+
+            <h3>Out of Stock</h3>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Drug Name</th>
+                    <th>Expire Date</th>
+                    <th>Manufacture Date</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Vitamin C</td>
+                    <td>2025-04-13</td>
+                    <td>2021-12-13</td>
+                    <td>1500</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paracetamol</td>
+                    <td>2026-03-13</td>
+                    <td>2022-06-04</td>
+                    <td>4500</td>
+                    <td>225</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="in2.js"></script>
+
+</body>
+</html>

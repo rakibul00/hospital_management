@@ -1,0 +1,84 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .contact-info {
+            width: 40%;
+        }
+        .contact-info img {
+            width: 150px;
+        }
+        .contact-form {
+            width: 50%;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #0b4d43;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    {% include "navbar.html" %}
+
+    <div class="container">
+        <div class="contact-container">
+            <div class="contact-info">
+                <img src="logo.png" alt="MediLab Hospital">
+                <p><strong>২৫-২৬, কেডিএ এভিনিউ, খুলনা-৯১০০।</strong></p>
+                <p>📞 01999 099 099, 01999 077 077</p>
+                <p>📧 MediLab Hospital.com.bd</p>
+            </div>
+            <div class="contact-form">
+                <h2>Get in touch</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Name*" required>
+                    <input type="email" id="email" placeholder="Email Address*" required>
+                    <input type="text" id="phone" placeholder="Phone*" required>
+                    <textarea id="message" placeholder="Message*" rows="4" required></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for contacting us! We will get back to you soon.");
+        });
+    </script>
+    {% include "footer.html" %}
+</body>
+</html>

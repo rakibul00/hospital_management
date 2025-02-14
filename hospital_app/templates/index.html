@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLab Hospital</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+
+</head>
+
+<style>
+    .hero-section {
+        background-image: url('{% static "images/bg2.png" %}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    {% include "navbar.html" %}
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container ">
+            <div class="row hed-sec">
+                <div class="col-md-8 h-p">
+                    <h1>We help people to get appointments online</h1>
+                    <p>A Hospital Management System is software that manages patient records, appointments, billing,
+                        staff, inventory, and hospital operations efficiently.</p>
+                    <p>hospital operations, including patient records, appointments, billing, staff management, and
+                        inventory control enhancing efficiency, reducing paperwork, </p>
+
+                </div>
+                <div class="col-md-4">
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+
+    <!-- About Section -->
+    <section class="about-section container">
+        <div class="row ">
+            <div class="col-md-6 img">
+                {% load static %}
+                <img src="{% static 'images/ab1.avif' %}" alt="Hospital Logo">
+
+            </div>
+            <div class="col-md-6 ab-t">
+                <h2>Who We Are</h2>
+                <p>A **Hospital Management System (HMS)** is software designed to streamline hospital operations,
+                    including patient records, appointments, billing, staff management, and inventory control, enhancing
+                    efficiency, reducing paperwork, and improving overall healthcare services and patient care. Lorem
+                    Media is a full-service social media agency... </p>
+                <p>Efficient hospital management system.</p>
+                <p>Streamlined Hospital Management System</p>
+                <button class="btn btn-outline-secondary">See More</button>
+            </div>
+        </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- notic section -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 content">
+            <div class="header"> Latest Notice </div>
+            <div>
+            </div>
+            <marquee className="text-xl text-black "direction="up" height="250px" >
+           
+                <ul>
+                    <li>Free Children's Camp every Monday from 9:00 am to 1:00 pm</li>
+                    <li>Outdoor facility daily (except Friday) from 9:00 AM to 2:00 PM</li>
+                    <li> A new pathological test 'ICT for Chikungunya IgG/IgM'.</li>
+                    <li>Attention all patients and visitors: Please follow hospital guidelines</li>
+                    <li>maintain hygiene, and respect visiting hours. For emergencies</li>
+                    <li>contact the front desk. Thank you for your cooperation.</li>
+                </ul>
+           
+            </marquee>
+
+        </div>
+        <div class="col-md-6 content">
+           
+            <div class="header"> visitor </div>
+            <table class="table">
+                <tr>
+                    <th>details</th>
+                    <th>Number</th>
+                </tr>
+                <tr>
+                    <td>is online</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>last 24 hours</td>
+                    <td>1519</td>
+                </tr>
+                <tr>
+                    <td>last 7 days</td>
+                    <td>10928</td>
+                </tr>
+                <tr>
+                    <td>last 30 days</td>
+                    <td>29034</td>
+                </tr>
+                <tr>
+                    <td>Total Visitors</td>
+                    <td>422208</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+    <!-- notic section end -->
+    
+   
+    <div class="container mb-4 mt-4">
+        <div class="notice-container">
+            <div class="notice-card border p-4">
+                <div class="d-flex align-items-center">
+                    <span class="icon">🎧</span>
+                    <h3 class="ms-2">Help Desk</h3>
+                </div>
+                <p>We have experienced IT experts to provide round the clock support for any website service and troubleshooting.</p>
+                <a href="#" class="contact-link">Contact →</a>
+            </div>
+   
+           
+            <div class="notice-card border p-4">
+                <div class="d-flex align-items-center">
+                    <span class="icon">💡</span>
+                    <h3 class="ms-2">Attention</h3>
+                </div>
+                <p>This website is a work in progress. We sincerely apologize for the temporary inconvenience. The website will be completed soon.</p>
+                <a href="#" class="contact-link">Contact →</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    {% include "footer.html" %}
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> -->
+
+    <script src="{ % static 'js/index.js'%}"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
+</html>

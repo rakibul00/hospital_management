@@ -1,0 +1,99 @@
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #6a5acd;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+}
+
+.sidebar .logo {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+/* Stats Cards */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    width: 23%;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #6a5acd;
+    color: white;
+}
+
+.online {
+    color: green;
+}
+
+.offline {
+    color: red;
+}
+
+/* Chart */
+.chart-section {
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
