@@ -28,7 +28,6 @@
         <header>
             <div class="user-info">
                 <h4>MediLab Hospital</h4>
-                
             </div>
         </header>
 
@@ -46,25 +45,17 @@
                 <div class="row">
                     <div class="col">
                         <label for="id_patient">Patient Name:</label>
-
                         {{ form.patient_name }}
-           
                     </div>
-                   
-                   
                 </div>
 
                 <div class="row">
                     <div class="col">
                         <label for="id_email">Email:</label>
-
                         {{ form.email }}
                     </div>
                     <div class="col">
-
-
                         <label for="id_phone_number">Mobile Number:</label>
-
                         {{ form.phone_number }}
                     </div>
                 </div>
@@ -72,12 +63,10 @@
                 <div class="row">
                     <div class="col">
                         <label for="id_age">Age:</label>
-
                         {{ form.age }}
                     </div>
                     <div class="col">
                         <label for="id_date">Date:</label>
-
                         {{ form.date }}
                     </div>
                 </div>
@@ -85,47 +74,30 @@
                 <div class="row">
                     <div class="col">
                         <label for="id_gender">Gender:</label>
-
                         {{ form.gender }}
                     </div>
-                
                     <div class="col">
-
                         <label for="id_time">Time:</label>
-
                         {{ form.time }}
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col">
-                       
                         <label for="id_doctor_name">Doctor Name:</label>
-
                         {{ form.doctor_name }}
                     </div>
                     <div class="col">
-                        
                         <label for="id_doctor_dep">Specialization:</label>
-
                         {{ form.doctor_dep }}
                     </div>
                 </div>
 
                 <label for="id_doctor">Address:</label>
-
                 {{ form.address }}
-                
-                    <button type="submit" class="btn btn-primary">Book Appointment</button>
-              
+                <button type="submit" class="btn btn-primary">Book Appointment</button>
             </form>
         </section>          
-      
-        <!-- <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-              <button type="submit" class="btn btn-primary">Book Appointment</button>
-        </form> -->
 
         <section class="appointment-table">
             <h3>Recent Appointments</h3>
@@ -167,8 +139,5 @@
         </section>
         {% include "footer.html" %}
     </div>
-  
-
-  
 </body>
 </html>
